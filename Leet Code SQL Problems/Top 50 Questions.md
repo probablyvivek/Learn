@@ -2,8 +2,9 @@
 
 ## Table of Contents
   - [Category: Select](#category-select)
+  - [Basic Joins](#basic-joins)
 
-
+---
 ## Category: Select
 
  [Recyclable and Low Fat Products]( https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50)
@@ -49,4 +50,8 @@ WHERE author_id = viewer_id;
 
 
 [Back to top](#table-of-contents)
+
+----
+
+## Basic Joins
 
