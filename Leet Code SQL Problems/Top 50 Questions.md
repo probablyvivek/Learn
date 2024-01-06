@@ -43,13 +43,24 @@ WHERE area >= 3000000 OR population >= 25000000;
 
 Solution:
 ```sql
-SELECT DISTINCT author_id AS id
+SELECT DISTINCT author_id as id
 FROM Views
-WHERE author_id = viewer_id;
+WHERE author_id = viewer_id
+ORDER BY author_id ASC;
 ```
 
+[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/?envType=study-plan-v2&envId=top-sql-50)
+`Difficulty: Easy`
 
+Solution:
+```sql
+SELECT tweet_id
+FROM Tweets
+WHERE CHAR_LENGTH(content)>15;
+```
+Note: `CHAR_LENGTH()` is used instead of `LENGTH()` because `LENGTH()` counts the number of bytes in a string, whereas `CHAR_LENGTH()` counts the number of characters in a string.
 
+I first used `LENGHT()` but the execution time was too long (1196 ms) but when I used `CHAR_LENGTH()` the execution time was reduced to 919 ms.
 
 [Back to top](#table-of-contents)
 
