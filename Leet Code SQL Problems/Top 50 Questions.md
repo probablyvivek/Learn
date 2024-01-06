@@ -1,11 +1,13 @@
 # Top 50 Leet Code SQL Problems
 
 ## Table of Contents
-  - [Category: Select](#category-select)
+
+### Categories
+  - [Select](#category-select)
   - [Basic Joins](#basic-joins)
 
 ---
-## Category: Select
+## Select
 
  [Recyclable and Low Fat Products]( https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50)
  `Difficulty: Easy`
