@@ -12,7 +12,7 @@
 Date: 7th January 2024
 ## Data Filtering
 
-[Big Countries](https://leetcode.com/problems/big-countries/description/?source=submission-noac)
+[Big Countries](https://leetcode.com/problems/big-countries/description/?source=submission-noac) |
 `Difficulty: Easy`
 
 Solution:
@@ -29,7 +29,7 @@ def big_countries(world: pd.DataFrame) -> pd.DataFrame:
     return big_countries_df[['name', 'population', 'area']].reset_index(drop=True)
 ```
 
-[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata)
+[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata) |
 `Difficulty: Easy`
 
 Solution:
@@ -46,7 +46,7 @@ def find_products(products: pd.DataFrame) -> pd.DataFrame:
     return recyclable_df[['product_id']].reset_index(drop=True)
 ```
 
-[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata)
+[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata) |
 `Difficulty: Easy`
 
 Solution:
@@ -64,7 +64,7 @@ def find_customers(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFram
 
     return result_df
 ```
-[Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata)
+[Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata) |
 `Difficulty: Easy`
 
 Solution:
@@ -87,7 +87,7 @@ def article_views(views: pd.DataFrame) -> pd.DataFrame:
 Date: 8th January 2024
 ## String Methods
 
-[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata)
+[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata) |
 `Difficulty: Easy`
 
 Solution:
@@ -95,7 +95,7 @@ Solution:
 import pandas as pd
 
 def invalid_tweets(tweets: pd.DataFrame) -> pd.DataFrame:
-	
+
     
 
 ```
