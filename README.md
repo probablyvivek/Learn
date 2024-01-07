@@ -9,7 +9,9 @@
 
 [Cheat Sheets](https://github.com/probablyvivek/Learn/tree/main/Cheat%20Sheets)
 
-[Leet Code SQL Problems](https://github.com/probablyvivek/Learn/blob/main/Leet%20Code%20SQL%20Problems/Top%2050%20Questions.md)
+[Leet Code SQL Problems](https://github.com/probablyvivek/Learn/blob/main/Leet%20Code/Top%2050%20SQL.md)
+
+
 
 
 
