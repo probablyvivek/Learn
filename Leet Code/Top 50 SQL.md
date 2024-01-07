@@ -10,7 +10,7 @@
 Date: 6th January 2024
 ## Select
 
- [Recyclable and Low Fat Products]( https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50)
+ [Recyclable and Low Fat Products]( https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50) |
  `Difficulty: Easy`
 
 Solution:
@@ -20,7 +20,7 @@ FROM Products
 WHERE low_fats = 'Y' AND recyclable = 'Y';
 ```
 
-[Find Customer Referee](https://leetcode.com/problems/find-customer-referee/?envType=study-plan-v2&envId=top-sql-50) 
+[Find Customer Referee](https://leetcode.com/problems/find-customer-referee/?envType=study-plan-v2&envId=top-sql-50) |
 `Difficulty: Easy`
 
 Solution:
@@ -29,7 +29,7 @@ SELECT name FROM Customer
 WHERE referee_id <> 2 OR referee_id IS NULL;
 ```
 
-[Big Countries](https://leetcode.com/problems/big-countries/?envType=study-plan-v2&envId=top-sql-50)
+[Big Countries](https://leetcode.com/problems/big-countries/?envType=study-plan-v2&envId=top-sql-50) |
 `Difficulty: Easy`
 
 Solution:
@@ -39,7 +39,7 @@ FROM World
 WHERE area >= 3000000 OR population >= 25000000;
 ```
 
-[Article View](https://leetcode.com/problems/article-views-i/?envType=study-plan-v2&envId=top-sql-50)
+[Article View](https://leetcode.com/problems/article-views-i/?envType=study-plan-v2&envId=top-sql-50) |
 `Difficulty: Easy`
 
 Solution:
@@ -50,7 +50,7 @@ WHERE author_id = viewer_id
 ORDER BY author_id ASC;
 ```
 
-[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/?envType=study-plan-v2&envId=top-sql-50)
+[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/?envType=study-plan-v2&envId=top-sql-50) |
 `Difficulty: Easy`
 
 Solution:
@@ -72,7 +72,7 @@ I first used `LENGHT()` but the execution time was too long (1196 ms) but when I
 Date: 7th January 2024
 ## Basic Joins
 
-[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/?envType=study-plan-v2&envId=top-sql-50)
+[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/?envType=study-plan-v2&envId=top-sql-50) |
 `Difficulty: Easy`
 
 Solution:
@@ -82,7 +82,7 @@ FROM Employees e
 LEFT JOIN EmployeeUNI u ON e.id = u.id
 ```
 
-[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/?envType=study-plan-v2&envId=top-sql-50)
+[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/?envType=study-plan-v2&envId=top-sql-50) |
 `Difficulty: Easy`
 
 Solution:
@@ -92,7 +92,7 @@ FROM Sales s
 JOIN Product p ON p.product_id = s.product_id
 ```
 
-[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50)
+[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50) |
 `Difficulty: Easy`
 
 Solution:
