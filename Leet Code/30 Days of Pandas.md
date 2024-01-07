@@ -4,6 +4,7 @@
 
 ### Categories
   - [Data Filtering](#data-filtering)
+  - [String Methods](#string-methods)
 
 
 ----
@@ -63,9 +64,38 @@ def find_customers(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFram
 
     return result_df
 ```
+[Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata)
+`Difficulty: Easy`
 
+Solution:
+```python
+import pandas as pd
 
+def article_views(views: pd.DataFrame) -> pd.DataFrame:
+    # Filter rows where author_id and viewer_id are the same (authors viewing their own articles)
+    authors_viewed_own_articles = views[views['author_id'] == views['viewer_id']]
 
+    # Extract unique and sorted author_ids, then create a DataFrame
+    unique_sorted_authors = pd.DataFrame({'id': sorted(authors_viewed_own_articles['author_id'].unique())})
+
+    return unique_sorted_authors
+```
 [Back to top](#table-of-contents)
 
 ----
+
+Date: 8th January 2024
+## String Methods
+
+[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata)
+`Difficulty: Easy`
+
+Solution:
+```python
+import pandas as pd
+
+def invalid_tweets(tweets: pd.DataFrame) -> pd.DataFrame:
+	
+    
+
+```
