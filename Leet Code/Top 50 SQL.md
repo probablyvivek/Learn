@@ -97,8 +97,11 @@ JOIN Product p ON p.product_id = s.product_id
 
 Solution:
 ```sql
-
-
+SELECT v.customer_id, count(*) as count_no_trans
+FROM Visits v
+LEFT JOIN Transactions t ON v.visit_id = t.visit_id
+WHERE t.visit_id IS NULL
+GROUP BY v.customer_id;
 ```
 
 [Back to top](#table-of-contents)
