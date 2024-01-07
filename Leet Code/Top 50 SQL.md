@@ -1,7 +1,5 @@
 # Top 50 Leet Code SQL Problems
 
-## Table of Contents
-
 ### Categories
   - [Select](#category-select)
   - [Basic Joins](#basic-joins)
@@ -83,6 +81,16 @@ LEFT JOIN EmployeeUNI u ON e.id = u.id
 ```
 
 [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/?envType=study-plan-v2&envId=top-sql-50)
+`Difficulty: Easy`
+
+Solution:
+```sql
+SELECT p.product_name, s.year, s.price
+FROM Sales s
+JOIN Product p ON p.product_id = s.product_id
+```
+
+[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50)
 `Difficulty: Easy`
 
 Solution:
