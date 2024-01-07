@@ -1,6 +1,8 @@
 # Top 50 Leet Code SQL Problems
 
-### Categories
+## Table of Contents
+
+#### Categories
   - [Select](#category-select)
   - [Basic Joins](#basic-joins)
 
@@ -95,6 +97,14 @@ JOIN Product p ON p.product_id = s.product_id
 
 Solution:
 ```sql
+
+
+```
+
+[Back to top](#table-of-contents)
+
+----
+
 
 
 
