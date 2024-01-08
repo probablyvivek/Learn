@@ -109,7 +109,14 @@ GROUP BY v.customer_id;
 
 Solution:
 ```sql
+SELECT w1.id
+FROM Weather w1
+JOIN Weather w2 
+ON DATEDIFF(w1.recordDate, w2.recordDate) = 1
+WHERE w1.Temperature > w2.Temperature;
+```
 
+```I don't how this was tagged as easy problem. I lost my mind trying to solve this problem. All the time I was thinking the solution has to be straightforward as it was tagged as easy. I knew SELF JOIN was to be used but the DATE_DIFF function was something I had to google and learn. ```
 
 [Back to top](#table-of-contents)
 
