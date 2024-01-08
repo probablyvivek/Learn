@@ -95,7 +95,10 @@ Solution:
 import pandas as pd
 
 def invalid_tweets(tweets: pd.DataFrame) -> pd.DataFrame:
-
+    invalid_tweets = tweets[tweets['content'].str.len() > 15]
     
+    # Extracting just the tweet_id of invalid tweets
+    invalid_tweet_ids = invalid_tweets[['tweet_id']]
 
+    return(invalid_tweet_ids)
 ```
