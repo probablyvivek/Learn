@@ -104,6 +104,13 @@ WHERE t.visit_id IS NULL
 GROUP BY v.customer_id;
 ```
 
+[Rising TemperatureRising Temperature](https://leetcode.com/problems/rising-temperature/description/?envType=study-plan-v2&envId=top-sql-50) |
+`Difficulty: Easy`
+
+Solution:
+```sql
+
+
 [Back to top](#table-of-contents)
 
 ----
