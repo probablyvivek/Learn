@@ -102,3 +102,27 @@ def invalid_tweets(tweets: pd.DataFrame) -> pd.DataFrame:
 
     return(invalid_tweet_ids)
 ```
+Date: 9th January 2024
+
+[Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata) |
+`Difficulty: Easy`
+
+Solution:
+```python
+import pandas as pd
+
+def calculate_special_bonus(employees: pd.DataFrame) -> pd.DataFrame:
+    # Define a function to determine the bonus for each employee
+    def bonus(row):
+        if row['employee_id'] % 2 != 0 and not row['name'].startswith('M'):
+            return row['salary']
+        else:
+            return 0
+
+    # Apply the function to each row
+    employees['bonus'] = employees.apply(bonus, axis=1)
+
+    # Return the DataFrame sorted by employee_id
+    return employees[['employee_id', 'bonus']].sort_values(by='employee_id')
+```
+
