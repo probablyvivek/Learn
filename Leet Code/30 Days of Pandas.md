@@ -126,3 +126,21 @@ def calculate_special_bonus(employees: pd.DataFrame) -> pd.DataFrame:
     return employees[['employee_id', 'bonus']].sort_values(by='employee_id')
 ```
 
+Date: 10th January 2024
+
+[Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/description/?envType=study-plan-v2&envId=30-days-of-pandas&lang=pythondata) |
+`Difficulty: Easy`
+
+Solution:
+```python
+import pandas as pd
+
+def fix_names(users: pd.DataFrame) -> pd.DataFrame:
+    return users.assign(
+        name=users['name'].str.capitalize(),
+    ).sort_values(
+        by='user_id',
+    )
+```
+
+
