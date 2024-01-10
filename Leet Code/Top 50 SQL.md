@@ -137,6 +137,19 @@ and a1.activity_type='start' and a2.activity_type='end'
 group by a1.machine_id
 ```
 
+Date: 10th January 2024
+
+[Employee Bonus](https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50) |
+`Difficulty: Easy`
+
+Solution:
+```sql
+SELECT Employee.name, Bonus.bonus
+FROM Employee
+LEFT JOIN Bonus ON Employee.empId = Bonus.empId
+WHERE Bonus.bonus < 1000 OR Bonus.bonus IS NULL;
+```
+
 
 
 
