@@ -150,6 +150,26 @@ LEFT JOIN Bonus ON Employee.empId = Bonus.empId
 WHERE Bonus.bonus < 1000 OR Bonus.bonus IS NULL;
 ```
 
+Date: 11th January 2024
+[Students and Examinations](https://leetcode.com/problems/students-and-examinations/description/?envType=study-plan-v2&envId=top-sql-50) |
+`Difficulty: Easy`
+
+Solution:
+```sql
+SELECT
+    Students.student_id,
+    Students.student_name,
+    Subjects.subject_name,
+    COUNT(Examinations.subject_name) AS attended_exams
+FROM Students 
+JOIN Subjects
+LEFT JOIN Examinations
+ON Students.student_id = Examinations.student_id
+AND Subjects.subject_name = Examinations.subject_name
+GROUP BY Students.student_id, Subjects.subject_name
+ORDER BY student_id ASC, subject_name ASC
+```
+
 
 
 
