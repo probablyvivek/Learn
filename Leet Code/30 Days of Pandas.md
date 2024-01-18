@@ -158,7 +158,7 @@ def valid_emails(users: pd.DataFrame) -> pd.DataFrame:
     return valid_emails_df
 ```
 
-Date: 18th January 2024
+Date: 20th January 2024
 
 
 
